@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project | JavaScript Functions</title>
+</head>
+
+<body>
+    <script>
+        function add7(num) {
+            console.log(num + 7);
+        }
+        add7(10);
+        // ---
+        function multiply(a, b) {
+            console.log(a * b);
+        }
+        multiply(3, 2);
+        // ---
+        function capitilise(string) {
+            let strLower = string.toLowerCase();
+            let firstLetter = string[0].toUpperCase();
+            let titleCase = strLower.replace(strLower[0], firstLetter);
+            console.log(titleCase);
+        }
+        capitilise("hello");
+        capitilise("fuTurE");
+        capitilise("FUNNY");
+        capitilise("farminG");
+        // ---
+        function lastLetter(string) {
+            let last = string[string.length - 1];
+            console.log(last);
+        }
+        lastLetter("Hello");
+        lastLetter("Trouble");
+    </script>
+</body>
+
+</html>
